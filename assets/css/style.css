@@ -1,7 +1,9 @@
 /* Variables */
 :root {
-    --coral: #696D7D;
-    --green: #6F9283;
+    --darkblue: #000022;
+    --lightblue: #005E7C;
+    --white: #FFFFFF;
+    --powderblue: #9AD1D4;
 }
 
 /* resets */
@@ -14,7 +16,7 @@
 html,
 body {
     height: 100%;
-    background-color: #FFFCEE;
+    background-color: var(--darkblue);
 }
 
 body {
@@ -42,21 +44,21 @@ body {
 /*custom styles*/
 h1.main-header {
     margin: 20px 0 25px;
-    color: var(--coral);
+    color: var(--white);
 }
 
 input.search {
     padding: 8px 15px;
     width: 350px;
     border-radius: 10px;
-    border: 1px solid var(--coral);
+    border: 1px solid var(--powderblue);
     outline: none;
     margin-bottom: 35px;
-    color: #696D7D;
+    color: var(--darkblue);
 }
 
 input.search::placeholder {
-    color: var(--coral);
+    color: var(--darkblue);
     text-align: center;
 }
 
@@ -69,7 +71,7 @@ main {
 
 main .movie-card {
 padding: 15px 10px;
-  border: 4px solid var(--coral);
+  border: 4px solid var(--lightblue);
   border-radius: 4px;
   background-position: center;
   background-size: cover;
@@ -84,7 +86,7 @@ main .movie-card>*:not(:last-child) {
 
 main p.no-search {
     grid-column: 1 / 4;
-    color: var(--coral);
+    color: var(--white);
 }
 
 main .movie-card h3 {
@@ -96,14 +98,14 @@ main .movie-card p {
 }
 
 main .movie-card a {
-    color: white;
+    color: var(--white);
     font-size: 0.8rem;
     text-decoration: none;
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed var(--white);
 }
 
 main .movie-card a:hover {
-    background-color: #696D7D;
+    background-color: var(--powderblue);
 }
 /* mobile styles */
 @media (max-width: 768px) {
