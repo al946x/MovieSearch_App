@@ -23,4 +23,29 @@ function noMatch() {
       }
     }
     
+    function fetchMovies(event) {
+        var keyCode = event.keyCode;
+        var searchText = searchInput.val().trim();
+      
+        if (keyCode === 13 && searchText) {
+      
+          $.get(`https://www.omdbapi.com/?apikey=20dc4c7f&s=${searchText}`)
+            .then(function (data) {
+              displayMatches(data.Search);
+              searchInput.val('');
+            });
+      
+        }
+      }
+      
+      function init() {
+        searchInput.keydown(fetchMovies);
+      }
+      
+      init();
+      
+      
+    
+    /* whatever you need to load or happen straight away goes into fucntion init*/
+    
     
