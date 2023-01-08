@@ -45,6 +45,7 @@ body {
 h1.main-header {
     margin: 20px 0 25px;
     color: var(--white);
+    font-family: 'Trebuchet MS';
 }
 
 input.search {
