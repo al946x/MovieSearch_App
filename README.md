@@ -4,7 +4,7 @@ This is an app which has been created to search for any movie. Upon search the m
 [Link to the deployed project]()
 
 # Screenshot 
-![screenshot of movie search app](assests/images/screenshot.png/ "Screen shot of movie search app")
+![screenshot of movie search app](assets/images/screenshot.png/ "Screen shot of movie search app")
 
 # Installation
 Clone the repo from github and run it on your local machine
