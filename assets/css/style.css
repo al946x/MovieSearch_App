@@ -1,0 +1,110 @@
+/* Variables */
+:root {
+    --coral: #696D7D;
+    --green: #6F9283;
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #FFFCEE;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* global classes*/
+.text-center {
+    text-align: center;
+}
+
+.row,
+.column {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/*custom styles*/
+h1.main-header {
+    margin: 20px 0 25px;
+    color: var(--coral);
+}
+
+input.search {
+    padding: 8px 15px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid var(--coral);
+    outline: none;
+    margin-bottom: 35px;
+    color: #696D7D;
+}
+
+input.search::placeholder {
+    color: var(--coral);
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 3%;
+}
+
+main .movie-card {
+padding: 15px 10px;
+  border: 4px solid var(--blue);
+  border-radius: 4px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/*every movie card in main, then everything in movie card except the last child*/
+main .movie-card>*:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+main p.no-search {
+    grid-column: 1 / 4;
+    color: var(--coral);
+}
+
+main .movie-card h3 {
+    font-size: 1rem;
+}
+
+main .movie-card p {
+    font-size: 0.9rem;
+}
+
+main .movie-card a {
+    color: var(--green);
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--green);
+}
+
+/* mobile styles */
+@media (max-width: 768px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
