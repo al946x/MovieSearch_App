@@ -16,7 +16,7 @@ function noMatch() {
           <div class="movie-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${matchObj.Poster});">
             <h3>${matchObj.Title}</h3>
             <p>Release Year: ${matchObj.Year}</p>
-            <a href="https://www.imdb.com/title/${matchObj.imdbID}" target="_blank">View More Info Here</a>
+            <a href="https://www.imdb.com/title/${matchObj.imdbID}" target="_blank">View Movie Details</a>
           </div>
           `);
         }

@@ -69,7 +69,7 @@ main {
 
 main .movie-card {
 padding: 15px 10px;
-  border: 4px solid var(--blue);
+  border: 4px solid var(--coral);
   border-radius: 4px;
   background-position: center;
   background-size: cover;
@@ -96,12 +96,15 @@ main .movie-card p {
 }
 
 main .movie-card a {
-    color: var(--green);
+    color: white;
     font-size: 0.8rem;
     text-decoration: none;
-    border-bottom: 1px dashed var(--green);
+    border-bottom: 1px dashed white;
 }
 
+main .movie-card a:hover {
+    background-color: #696D7D;
+}
 /* mobile styles */
 @media (max-width: 768px) {
     main {
