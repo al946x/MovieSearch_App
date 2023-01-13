@@ -56,6 +56,7 @@ font-family: 'sans-serif';
 font-style: italic;
 padding-top: 0%;
 padding-bottom: 3%;
+color: var(--powderblue);
 
 }
 input.search {
@@ -82,7 +83,7 @@ main {
 
 main .movie-card {
 padding: 15px 10px;
-  border: 4px solid var(--lightblue);
+  border: 4px solid var(--powderblue);
   border-radius: 4px;
   background-position: center;
   background-size: cover;
