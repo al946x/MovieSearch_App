@@ -21,6 +21,7 @@ body {
 
 body {
     font-family: sans-serif;
+    color: var(--white);
 }
 
 /* global classes*/
@@ -46,8 +47,17 @@ h1.main-header {
     margin: 20px 0 25px;
     color: var(--white);
     font-family: 'Trebuchet MS';
+    
 }
 
+.slogan {
+text-align: center;
+font-family: 'sans-serif';
+font-style: italic;
+padding-top: 0%;
+padding-bottom: 3%;
+
+}
 input.search {
     padding: 8px 15px;
     width: 350px;
