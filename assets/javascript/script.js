@@ -1,5 +1,8 @@
+//global variables declared 
 var searchInput = $('.search');
 var cardWrapper = $('main');
+
+//function if there is no match for the user input and if there is a match
 
 function noMatch() {
     cardWrapper.html('<p class="no-search">No results found.</p>');
@@ -7,6 +10,7 @@ function noMatch() {
   
   function displayMatches(matches) {
     cardWrapper.html('');
+
 
     if (!matches) {
         noMatch();
@@ -23,13 +27,15 @@ function noMatch() {
       }
     }
     
+    // retriving the data from the API
+
     function fetchMovies(event) {
         var keyCode = event.keyCode;
         var searchText = searchInput.val().trim();
       
         if (keyCode === 13 && searchText) {
       
-          $.get(`https://www.omdbapi.com/?apikey=20dc4c7f&s=${searchText}`)
+          $.get(`https://www.omdbapi.com/?apikey=27127729&s=${searchText}`) 
             .then(function (data) {
               displayMatches(data.Search);
               searchInput.val('');
@@ -46,6 +52,6 @@ function noMatch() {
       
       
     
-    /* whatever you need to load or happen straight away goes into fucntion init*/
+    /* whatever you need to load or happen straight away goes into function init*/
     
     
