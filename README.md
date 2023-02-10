@@ -1,7 +1,7 @@
 # MovieScope
 
 # Description 
-This is an app which has been created to search for any movie. Upon search the movie name, release date and link to IMDB will appear. The app has been created using j Query, APIs and custom CSS. 
+This is an app which has been created to search for any movie. Upon search the movie name, release date and link to IMDB will appear. The app has been created using j Query, APIs and custom CSS. This app was created apart of my front end web development bootcamp with trilogy/edX.
 [Link to the deployed project]()
 
 # Screenshot 
