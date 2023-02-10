@@ -2,7 +2,7 @@
 
 # Description 
 This is an app which has been created to search for any movie. Upon search the movie name, release date and link to IMDB will appear. The app has been created using j Query, APIs and custom CSS. This app was created a part of my front end web development bootcamp with trilogy/edX.
-[Link to the deployed project]()
+[Link to the deployed project](https://al946x.github.io/MovieSearch_App/ "link to the deployed project")
 
 # Screenshot 
 ![screenshot of movie search app](assets/images/screenshotmovieapp.png "Screen shot of movie search app")
